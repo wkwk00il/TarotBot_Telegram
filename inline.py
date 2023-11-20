@@ -77,3 +77,16 @@ pay_for_layout_45 = InlineKeyboardMarkup(inline_keyboard=[
         )
     ]
 ])
+
+admin_panel_keyboard = InlineKeyboardMarkup(inline_keyboard=[
+    [
+        InlineKeyboardButton(
+            text='Изменить баланс пользователя',
+            callback_data='change_balance'
+        ),
+        InlineKeyboardButton(
+            text='Назначить администратора',
+            callback_data='add_admin'
+        ),
+    ]
+])

@@ -7,6 +7,7 @@ from databases import update_balance
 async def pre_checkout_query(pre_checkout_query: PreCheckoutQuery, bot: Bot):
     await bot.answer_pre_checkout_query(pre_checkout_query.id, ok=True)
 
+
 async def cash_in_150(call: CallbackQuery, bot: Bot):
     await bot.send_invoice(
         chat_id=call.from_user.id,
